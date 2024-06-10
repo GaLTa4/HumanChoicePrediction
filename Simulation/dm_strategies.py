@@ -126,3 +126,13 @@ def LLM_based(is_stochastic):
             review_llm_score = proba2go[information["review_id"]]
             return int(review_llm_score >= 0.5)
         return func
+
+
+def LLM_based_modified():
+    with open(f"data/baseline.txt", 'r') as file:
+        predicted_rating = json.load(file)
+        predicted_rating = {int(k): v for k, v in predicted_rating.items()}
+    def func(information):
+        review_llm_score = predicted_rating[information["review_id"]]
+        return int(review_llm_score >= 8)
+    return func
