@@ -1,5 +1,5 @@
-# Human Choice Prediction in Language-based Persuasion Games: Simulation-based Off-Policy Evaluation
-
+# Improving Human Choice Prediction in Language-based Persuasion Games:
+Leveraging Advanced NLP Techniques for Simulation
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ To install and run the code on your local machine, follow these steps:
 
    First, clone the repository to your local machine using Git. Open a terminal and run the following command:
    ```bash
-   git clone https://github.com/eilamshapira/HumanChoicePrediction
+   git clone https://github.com/GaLTa4/HumanChoicePrediction.git
     ```
 2. **Create and activate the conda environment**
 
@@ -40,15 +40,12 @@ To install and run the code on your local machine, follow these steps:
     wandb login
     ```
 
-## Citation
+### How to create our baseline file for simulations
+1. Navigate into the right directory:
 
-If you find this work useful, please cite our paper:
+    ```bash
+    cd RunningScripts/CreatingBaselineForSimulation
+    ```
+2. Run the 'final_project_NLP.ipynb' file
 
-    @misc{shapira2024human,
-          title={Human Choice Prediction in Language-based Persuasion Games: Simulation-based Off-Policy Evaluation}, 
-          author={Eilam Shapira and Reut Apel and Moshe Tennenholtz and Roi Reichart},
-          year={2024},
-          eprint={2305.10361},
-          archivePrefix={arXiv},
-          primaryClass={cs.LG}
-    }
+Note: We supplied pkl files (in 'CreatingBaselineForSimulation' folder) that were created during different parts of the code, so you don't need to run the entire notebook to get the baseline file. 
